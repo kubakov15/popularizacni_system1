@@ -24,7 +24,7 @@
 
 Ahoj
 <br>
-
+<br>
 @php
     use App\Models\Autoris;
     $autori = Autoris::all();
