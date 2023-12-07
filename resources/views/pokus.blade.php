@@ -9,6 +9,7 @@
 <body>
 
 
-    <h1>ahoj </h1>
+    <h1>ahoj tady je stránka pokus </h1>
+    <a href="/"> welcome</a> <!--  odkazujeme se zde na název v controllru v Route::get('/', [Testcontroller::class, 'Booklist']);-->
 </body>
 </html>

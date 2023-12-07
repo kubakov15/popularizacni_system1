@@ -22,10 +22,11 @@
     </head>
     <body class="antialiased">
 
-Ahoj
+<h1>Ahoj tady je stránka welcome</h1>
+<a href="pokus"> pukus</a>
 <br>
 <br>
-@php
+{{-- @php
     use App\Models\Books;
     $books = Books::all();
 
@@ -33,7 +34,7 @@ Ahoj
 
 
 // bks je proměná a pak tu proměnou vyspisuji do stránky a -> name je co chci vypsat
-@endphp
+@endphp --}}
 
 @foreach ($books as $bks)
 
