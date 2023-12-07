@@ -29,9 +29,30 @@ Ahoj
     use App\Models\Books;
     $books = Books::all();
 
-        echo $books[0]->name;
+      //  echo $books[0]->name;
+
+
+// bks je proměná a pak tu proměnou vyspisuji do stránky a -> name je co chci vypsat
 @endphp
 
+@foreach ($books as $bks)
+
+    <p>knížka: {{ $bks->name }} a jeji autor je {{ $bks->autoris->name }}</p>
+
+@endforeach
+
+
+
+
+{{-- {{$books[0]->name}} a autor je: {{$books[0]->autor_id}}; --}}
+
+
+
+{{-- @foreach ($books as $bks)
+
+    <p>knížka: {{ $bks->name }} </p>
+
+@endforeach --}}
 
 {{--
 @php
