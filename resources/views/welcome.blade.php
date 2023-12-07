@@ -26,6 +26,15 @@ Ahoj
 <br>
 <br>
 @php
+    use App\Models\Books;
+    $books = Books::all();
+
+        echo $books[0]->name;
+@endphp
+
+
+{{--
+@php
     use App\Models\Autoris;
     $autori = Autoris::all();
 
@@ -33,7 +42,7 @@ Ahoj
 @endphp
 
 
-
+ --}}
 {{-- @include('mjbtn')
 @for ($i = 1; $i < 20; $i++)
 
